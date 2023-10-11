@@ -1,0 +1,57 @@
+$color_1: #000;
+$color_2: #262b3e;
+$color_3: #537dd6;
+
+.btn.btn-blue {
+	font-size: 14px;
+	line-height: 35px;
+	padding: 0 15px;
+	background: #2197d5;
+}
+.about-img {
+	margin: 0 0 20px;
+	display: block;
+	margin: 0 0 10px;
+	border: 2px solid #d3dee7;
+	-webkit-box-shadow: 0px 5px 10px rgba(34, 93, 132, .16);
+	-moz-box-shadow: 0px 5px 10px rgba(34, 93, 132, .16);
+	box-shadow: 0px 5px 10px rgba(34, 93, 132, .16);
+}
+.data-badge {
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 20px;
+}
+.data-badge-param_verified {
+	background-image: url("./sberbank.svg");
+}
+.data-badge_have_cashback {
+	background-image: url("./icn_have_cashback1.svg");
+}
+.data-about {
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #d3dee7;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: $color_1;
+	padding: 3px 0 4px;
+	a {
+		color: $color_3;
+		text-decoration: none;
+		transition: color .2s ease-in-out;
+	}
+}
+.wrap-data {
+	padding: 0 0 13px;
+}
+.ui-button-orange {
+	display: inline;
+	font-size: 13px;
+	line-height: 20px;
+	color: $color_2;
+	padding: 5px 8px;
+	border-radius: 4px;
+}
