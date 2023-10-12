@@ -1,0 +1,90 @@
+<form action="https://exchangesumo.com/exchanger/1068/Cerber/" method="post" id="add_review_form"
+    style="display: block;">
+    <input type="hidden" name="_wpnonce_reviews" value="288b14fd54">
+    <input type="hidden" name="review_action" value="create">
+    <input type="hidden" name="reviews[xobmen_id]" value="1068">
+    <div class="row">
+        <div class="col">
+            <span class="form-title">Добавить отзыв</span>
+        </div>
+        <div class="col">
+            <div class="rating_box">
+                <input class="need-hidden" type="hidden" name="reviews[rating]" value="0">
+                <div class="rating-title">Рейтинг:</div>
+                <div class="rating-stars not-check">
+                    <span class="star" data-val="0"></span>
+                    <span class="star" data-val="1"></span>
+                    <span class="star" data-val="2"></span>
+                    <span class="star" data-val="3"></span>
+                    <span class="star" data-val="4"></span>
+                    <span class="star" data-val="5"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col ">
+            <input type="text" name="reviews[user_name]" value="" placeholder="Ваше имя" required="">
+        </div>
+        <div class="col ">
+            <input type="email" name="reviews[user_email]" value="" placeholder="Электронная почта *" required="">
+        </div>
+    </div>
+    <div class="row no-hidden">
+        <div class="col">
+            <div class="select-box" id="speed">
+                <input class="need-hidden" type="hidden" name="reviews[speed]" value="0">
+                <div class="select-box_label">Оцените скорость обмена</div>
+                <div class="select-box_item-box" style="display: none;">
+                    <div class="select-box_item-box_item" data-val="0">нет оценки</div>
+                    <div class="select-box_item-box_item" data-val="1">мгновенно</div>
+                    <div class="select-box_item-box_item" data-val="5">до 5 минут</div>
+                    <div class="select-box_item-box_item" data-val="10">до 10 минут</div>
+                    <div class="select-box_item-box_item" data-val="30">до 30 минут</div>
+                    <div class="select-box_item-box_item" data-val="50">до 50 минут</div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="select-box" id="ball">
+                <input class="need-hidden" type="hidden" name="reviews[ball]" value="0">
+                <div class="select-box_label">Оцените работу поддержки</div>
+                <div class="select-box_item-box">
+                    <div class="select-box_item-box_item" data-val="0">нет оценки</div>
+                    <div class="select-box_item-box_item" data-val="1">очень плохо</div>
+                    <div class="select-box_item-box_item" data-val="2">плохо</div>
+                    <div class="select-box_item-box_item" data-val="3">хорошо</div>
+                    <div class="select-box_item-box_item" data-val="4">очень хорошо</div>
+                    <div class="select-box_item-box_item" data-val="5">отлично</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <textarea required="" cols="3" rows="3" name="reviews[comment]"
+            placeholder="Напишите ваш отзыв об обменнике *"></textarea>
+    </div>
+    <div class=" hidden ">
+        <input type="text" class="reviews_number_order" name="reviews[number_order]" value=""
+            placeholder="Номер заявки для претензии">
+    </div>
+
+    <div class="foot-btn">
+        <div class="aside-hold">
+            <div class="hold-check">
+                <input id="radio-good" type="radio" name="reviews[status]" value="1" checked="true">
+                <label class="label-radio label-green" for="radio-good">Положительный</label>
+            </div>
+            <div class="hold-check">
+                <input id="radio-comment" type="radio" name="reviews[status]" value="0">
+                <label class="label-radio label-dark" for="radio-comment">Комментарий</label>
+            </div>
+            <div class="hold-check">
+                <input id="radio-bad" type="radio" name="reviews[status]" value="-1">
+                <label class="label-radio label-brown" for="radio-bad">Претензия</label>
+            </div>
+        </div>
+        <button type="submit" class="btn">Добавить отзыв</button>
+    </div>
+</form>

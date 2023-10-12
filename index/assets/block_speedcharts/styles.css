@@ -1,0 +1,77 @@
+.block-speed-charts {
+    display: flex;
+    justify-content: space-around
+}
+
+.block-speed-chart-item {
+    height: 85px;
+    overflow: hidden
+}
+
+.block-speed-support, .block-speed-order {
+    background-image: url("./speed-chart.svg");
+    background-size: 130px;
+    background-repeat: no-repeat;
+    height: 180px;
+    min-width: 135px;
+    position: relative;
+    top: -20px;
+    text-align: center;
+}
+
+.name-block-speed {
+    font-size: 14px;
+    white-space: nowrap;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.order-speed-text,.support-speed-text {
+    text-align: center;
+    font-weight: 500;
+    margin-right: 8px !important
+}
+
+.speedometer {
+    display: block;
+    width: 190px;
+    height: 95px;
+    border-radius: 999px 999px 0 0;
+    position: absolute;
+    top: -21px;
+    left: -29px
+}
+
+.speedometer .arrow {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform-origin: center calc(100% + 5px)
+}
+
+@keyframes speed70 {
+    0%,100% {
+        transform: translateX(-50%) rotate(-90deg)
+    }
+
+    60%,80%,100% {
+        transform: translateX(-50%) rotate(70deg)
+    }
+}
+
+.speedometer:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    right: 90px
+}
+
+.speed-70 {
+    transform: translateX(-50%) rotate(70deg);
+    animation: speed70 4s ease-in-out
+}

@@ -16,6 +16,8 @@ $color_3: #537dd6;
 	-webkit-box-shadow: 0px 5px 10px rgba(34, 93, 132, .16);
 	-moz-box-shadow: 0px 5px 10px rgba(34, 93, 132, .16);
 	box-shadow: 0px 5px 10px rgba(34, 93, 132, .16);
+	max-width: 100%;
+    height: auto;
 }
 .data-badge {
 	background-repeat: no-repeat;
@@ -54,4 +56,5 @@ $color_3: #537dd6;
 	color: $color_2;
 	padding: 5px 8px;
 	border-radius: 4px;
+	white-space: nowrap;
 }
