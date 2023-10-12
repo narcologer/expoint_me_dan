@@ -1,0 +1,43 @@
+.data-badge__confirmed {
+  background-image: url("./images/icn_confirmed.svg");
+}
+
+.data-autor .review-date {
+  float: right;
+  font-weight: 500;
+  padding: 0 0 0 22px;
+  color: #a2a3a3;
+  margin: 0 2px 8px 20px;
+  position: relative;
+  text-align: right;
+  font-weight: 500;
+  margin: 0 2px 8px 20px;
+  text-align: right;
+}
+
+.box-review {
+  background-color: #e9fae7;
+  border-color: #589950;
+  color: #4a6b46;
+  padding: 13px 19px 10px;
+  margin: 0 0 18px;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #dfe3e9;
+}
+.box-review .foot-review {
+  overflow: hidden;
+  margin: -20px 0 0;
+}
+
+.link-action {
+  color: #597756;
+  border-color: #a0c99b;
+  margin: 0 0 5px 14px;
+  font-weight: 500;
+  border-bottom: 1px dashed #939aa4;
+  font-size: 13px;
+  line-height: 16px;
+  transition: border-color 0.2s ease-in-out;
+}/*# sourceMappingURL=block_revsBox.css.map */

@@ -1,0 +1,21 @@
+.exchanger_tab {
+  background: #7e90b8;
+  color: #fff;
+  float: left;
+  padding: 5px 15px;
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.exchanger_tab.active {
+  background: #4c57aa;
+  box-shadow: 3px 1px 2px #c3c2c2;
+}
+
+.exchanger_tabs {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=block_exchangeTabs-mob.css.map */

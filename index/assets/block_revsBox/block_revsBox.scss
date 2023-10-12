@@ -1,0 +1,49 @@
+$color_1: #a2a3a3;
+$color_2: #4a6b46;
+$color_3: #597756;
+$background-color_1: #e9fae7;
+$border-color_1: #589950;
+$border-color_2: #a0c99b;
+
+.data-badge__confirmed {
+	background-image: url("./images/icn_confirmed.svg");
+}
+.data-autor {
+	.review-date {
+		float: right;
+		font-weight: 500;
+		padding: 0 0 0 22px;
+		color: $color_1;
+		margin: 0 2px 8px 20px;
+		position: relative;
+		text-align: right;
+		font-weight: 500;
+		margin: 0 2px 8px 20px;
+		text-align: right;
+	}
+}
+.box-review {
+	background-color: $background-color_1;
+	border-color: $border-color_1;
+	color: $color_2;
+	padding: 13px 19px 10px;
+	margin: 0 0 18px;
+	position: relative;
+	font-size: 16px;
+	line-height: 24px;
+	border: 1px solid #dfe3e9;
+	.foot-review {
+		overflow: hidden;
+		margin: -20px 0 0;
+	}
+}
+.link-action {
+	color: $color_3;
+	border-color: $border-color_2;
+	margin: 0 0 5px 14px;
+	font-weight: 500;
+	border-bottom: 1px dashed #939aa4;
+	font-size: 13px;
+	line-height: 16px;
+	transition: border-color .2s ease-in-out;
+}
