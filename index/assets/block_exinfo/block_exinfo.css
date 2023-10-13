@@ -19,12 +19,19 @@
   padding: 0 0 13px;
 }
 
-.ui-button-orange {
+.btn-warning {
   display: inline;
   font-size: 13px;
   line-height: 20px;
-  color: #262b3e;
   padding: 5px 8px;
   border-radius: 4px;
   white-space: nowrap;
+  background-color: rgba(255, 150, 46, 0.2);
+  color: #262b3e;
+  border-color: rgba(255, 150, 46, 0.2);
+}
+.btn-warning:hover {
+  background-color: rgba(255, 150, 46, 0.2);
+  color: #000;
+  border-color: rgba(255, 150, 46, 0.2);
 }/*# sourceMappingURL=block_exinfo.css.map */

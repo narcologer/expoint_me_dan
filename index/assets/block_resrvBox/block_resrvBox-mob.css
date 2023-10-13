@@ -1,0 +1,7 @@
+table tr:nth-child(even) {
+  background: rgba(230, 238, 242, 0.4);
+}
+
+table#exchangesDoubleTable tr:nth-child(4n+3) {
+  background: rgba(230, 238, 242, 0.4);
+}/*# sourceMappingURL=block_resrvBox-mob.css.map */

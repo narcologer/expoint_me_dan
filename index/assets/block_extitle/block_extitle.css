@@ -2,12 +2,11 @@
   font-size: 14px;
   line-height: 35px;
   padding: 0 15px;
-  background: #2197d5;
+  background: #325cf0 !important;
 }
 
 .about-img {
-  margin: 0 0 20px;
-  display: block;
+  display: inline-block;
   margin: 0 0 10px;
   border: 2px solid #d3dee7;
   box-shadow: 0px 5px 10px rgba(34, 93, 132, 0.16);

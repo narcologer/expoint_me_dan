@@ -12,7 +12,8 @@
 }
 
 .exchanger_tab.active {
-  background: #4c57aa;
+  color: #000;
+  background: #ebeeff;
   box-shadow: 3px 1px 2px #c3c2c2;
 }
 

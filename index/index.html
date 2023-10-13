@@ -185,6 +185,7 @@
     <link href="./assets/files/banners-brief-mob.css" rel="stylesheet" media="only screen and (max-width:992px)">
     <script src="./assets/files/jquery.min.js.загрузка"></script>
     <script src="./assets/files/optimize.js.загрузка"></script>
+
     <script>
         function gtag() { dataLayer.push(arguments); }; (function (w, d, s, l, i, gi) {
             function setGaCookie(n, v, m) {
@@ -6875,6 +6876,11 @@
             <!-- CONTENT -->
 
             <!-- layouts-main -->
+            <style>
+                #content {
+                    background-color: #fdfdfd;
+                }
+            </style>
             <div id="content" class="preload-content overflow-hidden pt-3 px-xl-4 px-3 col-lg-8 col-12">
                 <link rel="stylesheet" href="./assets/block_extitle/block_extitle.css">
                 <link rel="stylesheet" href="./assets/block_extitle/block_extitle-mob.css"
@@ -6896,6 +6902,14 @@
                 <link rel="stylesheet" href="./assets/block_revsBox/block_revsBox-mob.css"
                     media="only screen and (max-width:992px)">
 
+                <link rel="stylesheet" href="./assets/block_resrvBox/block_resrvBox.css">
+                <link rel="stylesheet" href="./assets/block_resrvBox/block_resrvBox-mob.css"
+                    media="only screen and (max-width:992px)">
+
+                <link rel="stylesheet" href="./assets/block_revForm/block_revForm.css">
+                <link rel="stylesheet" href="./assets/block_revForm/block_revForm-mob.css"
+                    media="only screen and (max-width:992px)">
+                <!-- <link rel="stylesheet" href="./assets/block_revForm/form.css"> -->
                 <div>
                     <div>
                         <div id="vw-content-title" class="d-flex align-items-baseline flex-column flex-lg-row"
@@ -6976,7 +6990,7 @@
                                                 <span><b>Кешбек:</b></span>
                                                 <div class="block-mob-cashback"><span class="mx-1">35%</span>
                                                     <div href="/cashback/?xobmen=1068#login_popup"
-                                                        class="btn btn-warning ui-button-orange" data-xobmen="1068">
+                                                        class="btn btn-warning" data-xobmen="1068">
                                                         Получить
                                                         кэшбек</div>
                                                 </div>
@@ -7069,14 +7083,14 @@
                             <div class="exchanger_tab active review_tab">Отзывы</div>
                             <div class="exchanger_tab resrv_tab">Резервы</div>
                         </div>
-                        <div style="padding-top: 23px; border-bottom: 1px solid #2197d5;"></div>
+                        <div style="padding-top: 24px; border-bottom: 1px solid #2197d5;"></div>
                         <p></p>
                         <div class="resrv_box" style="display: none;">
                             <div class="large-title">
                                 <h2>Резервы обменника</h2>
                             </div>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-sm-4">
                                     <div class="table-data">
                                         <table>
                                             <tbody>
@@ -7172,7 +7186,7 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-sm-4">
                                     <div class="table-data">
                                         <table>
                                             <tbody>
@@ -7264,7 +7278,7 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-sm-4">
                                     <div class="table-data">
                                         <table>
                                             <tbody>
@@ -7360,25 +7374,17 @@
                         </div><!-- /.resrv_box -->
                         <div class="wrap-review review_box" id="exchanger-reviews" style="display: block;">
                             <h2>Отзывы обменника Cerber</h2>
-                            <div class="review_name">
-                                <div class="form-review" id="create-reviews" style="display: contents; width: auto;">
-
-                                    <!-- <div id="add_review_btn" class="ui-button-orange">Добавить отзыв </div>
-                                <div class="row"> -->
-
-
-                                </div>
-
+                            <div class="form-review" id="create-reviews" style="display: contents; width: auto;">
                                 <form action="https://exchangesumo.com/exchanger/1068/Cerber/" method="post"
-                                    id="add_review_form" style="display: none;">
-                                    <input type="hidden" name="_wpnonce_reviews" value="288b14fd54">
+                                    id="add_review_form">
+                                    <input type="hidden" name="_wpnonce_reviews" value="57070b3be5">
                                     <input type="hidden" name="review_action" value="create">
                                     <input type="hidden" name="reviews[xobmen_id]" value="1068">
-                                    <div class="row">
-                                        <div class="col">
+                                    <div class="formRow">
+                                        <div class="formCol">
                                             <span class="form-title">Добавить отзыв</span>
                                         </div>
-                                        <div class="col">
+                                        <div class="formCol">
                                             <div class="rating_box">
                                                 <input class="need-hidden" type="hidden" name="reviews[rating]"
                                                     value="0">
@@ -7395,23 +7401,23 @@
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <div class="col ">
+                                    <div class="formRow">
+                                        <div class="formCol ">
                                             <input type="text" name="reviews[user_name]" value="" placeholder="Ваше имя"
                                                 required="">
                                         </div>
-                                        <div class="col ">
+                                        <div class="formCol ">
                                             <input type="email" name="reviews[user_email]" value=""
                                                 placeholder="Электронная почта *" required="">
                                         </div>
                                     </div>
-                                    <div class="row no-hidden">
-                                        <div class="col">
+                                    <div class="formRow no-hidden">
+                                        <div class="formCol">
                                             <div class="select-box" id="speed">
                                                 <input class="need-hidden" type="hidden" name="reviews[speed]"
                                                     value="0">
                                                 <div class="select-box_label">Оцените скорость обмена</div>
-                                                <div class="select-box_item-box">
+                                                <div class="select-box_item-box" style="display:none;">
                                                     <div class="select-box_item-box_item" data-val="0">нет оценки</div>
                                                     <div class="select-box_item-box_item" data-val="1">мгновенно</div>
                                                     <div class="select-box_item-box_item" data-val="5">до 5 минут</div>
@@ -7424,11 +7430,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col">
+                                        <div class="formCol">
                                             <div class="select-box" id="ball">
                                                 <input class="need-hidden" type="hidden" name="reviews[ball]" value="0">
                                                 <div class="select-box_label">Оцените работу поддержки</div>
-                                                <div class="select-box_item-box">
+                                                <div class="select-box_item-box"  style="display:none;">
                                                     <div class="select-box_item-box_item" data-val="0">нет оценки</div>
                                                     <div class="select-box_item-box_item" data-val="1">очень плохо</div>
                                                     <div class="select-box_item-box_item" data-val="2">плохо</div>
@@ -7441,7 +7447,7 @@
                                         </div>
                                     </div>
                                     <div class="">
-                                        <textarea required="" cols="3" rows="3" name="reviews[comment]"
+                                        <textarea required="" formCols="3" formRows="3" name="reviews[comment]"
                                             placeholder="Напишите ваш отзыв об обменнике *"></textarea>
                                     </div>
                                     <div class=" hidden ">
@@ -7449,153 +7455,131 @@
                                             value="" placeholder="Номер заявки для претензии">
                                     </div>
 
-                                    <div class="foot-btn">
-                                        <div class="aside-hold">
+                                    <div class="d-flex justify-content-around">
+                                        <div class="aside-hold d-flex">
                                             <div class="hold-check">
                                                 <input id="radio-good" type="radio" name="reviews[status]" value="1"
                                                     checked="true">
                                                 <label class="label-radio label-green"
                                                     for="radio-good">Положительный</label>
                                             </div>
-                                            <div class="hold-check">
+                                            <div class="hold-check mx-4">
                                                 <input id="radio-comment" type="radio" name="reviews[status]" value="0">
                                                 <label class="label-radio label-dark"
                                                     for="radio-comment">Комментарий</label>
                                             </div>
                                             <div class="hold-check">
                                                 <input id="radio-bad" type="radio" name="reviews[status]" value="-1">
-                                                <label class="label-radio label-brown" for="radio-bad">Претензия</label>
+                                                <label class="label-radio label-bformRown"
+                                                    for="radio-bad">Претензия</label>
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn">Добавить отзыв</button>
+                                        <button type="submit" class="btn btn-primary">Добавить отзыв</button>
                                     </div>
                                 </form>
                             </div>
-                        </div>
-                        <!--Фильтр по отзывам обменника-->
-                        <div id="filter_reviews" style="display: none">
-                            <form id="reviewsFilter" action="" method="post" name="filter_reviews">
-                                <div class="block-filter">
-                                    <div class="filter-check hold-check">
-                                        <input id="radio-clean" type="radio" name="selectReviews" checked="" value="2">
-                                        <label class="cleanReviews pointer label-radio label-dark"
-                                            for="radio-clean">Все</label>
-                                    </div>
-                                    <div class="filter-check hold-check">
-                                        <input id="radio-positive" type="radio" name="selectReviews" value="1">
-                                        <label class="positiveReviews pointer label-radio label-green"
-                                            for="radio-positive">Положительные</label>
-                                    </div>
-                                    <div class="filter-check hold-check">
-                                        <input id="radio-neutral" type="radio" name="selectReviews" value="0">
-                                        <label class="neutralReviews pointer label-radio label-dark"
-                                            for="radio-neutral">Нейтральные</label>
-                                    </div>
-                                    <div class="filter-check hold-check">
-                                        <input id="radio-negative" type="radio" name="selectReviews" value="-1">
-                                        <label class="negativeReviews pointer label-radio label-brown"
-                                            for="radio-negative">Отрицательные</label>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
 
-                        <div class="holder-review">
+                            <div class="holder-review mt-4">
 
-                            <blockquote class="review-item review-green" id="review-parent-75746" itemprop="review"
-                                itemscope="" itemtype="http://schema.org/Review">
-                                <span itemprop="itemReviewed" itemscope="" itemtype="http://schema.org/Organization"
-                                    itemref="exchanger-card"></span>
-                                <link itemprop="url" href="#review-parent-75746">
-                                <cite class="d-flex justify-content-around">
-                                    <span class="icon-user"></span>
-                                    <strong class="name-user" itemprop="author" itemscope=""
-                                        itemtype="http://schema.org/Person">
-                                        <span class="text-dark" itemprop="name"> Феликс</span>
-                                    </strong>
-                                    <span class="user-ip"><noscript><img alt="Россия" class="country-flag"
+                                <blockquote class="review-item review-green" id="review-parent-75746" itemprop="review"
+                                    itemscope="" itemtype="http://schema.org/Review">
+                                    <span itemprop="itemReviewed" itemscope="" itemtype="http://schema.org/Organization"
+                                        itemref="exchanger-card"></span>
+                                    <link itemprop="url" href="#review-parent-75746">
+                                    <cite class="d-flex justify-content-around">
+                                        <span class="icon-user"></span>
+                                        <strong class="name-user" itemprop="author" itemscope=""
+                                            itemtype="http://schema.org/Person">
+                                            <span class="text-dark" itemprop="name"> Феликс</span>
+                                        </strong>
+                                        <span class="user-ip"><noscript><img alt="Россия" class="country-flag"
+                                                    style="width:20px;vertical-align:-4px;position:relative;height:16px;object-fit:scale-down"
+                                                    src="https://img2.exchangesumo.com/wp-content/plugins/vw-reviews/assets/images/flags-iso/24/RU.png"></noscript><img
+                                                alt="Россия" class="country-flag ls-is-cached lazyloaded"
                                                 style="width:20px;vertical-align:-4px;position:relative;height:16px;object-fit:scale-down"
-                                                src="https://img2.exchangesumo.com/wp-content/plugins/vw-reviews/assets/images/flags-iso/24/RU.png"></noscript><img
-                                            alt="Россия" class="country-flag ls-is-cached lazyloaded"
-                                            style="width:20px;vertical-align:-4px;position:relative;height:16px;object-fit:scale-down"
-                                            src="https://img2.exchangesumo.com/wp-content/plugins/vw-reviews/assets/images/flags-iso/24/RU.png"
-                                            data-src="https://img2.exchangesumo.com/wp-content/plugins/vw-reviews/assets/images/flags-iso/24/RU.png">213.87.137.*</span>
-                                    <div
-                                        class="d-flex justify-content-start flex-nowrap align-items-center align-content-center">
-                                        <span class="wrap-badge data-badge data-badge__confirmed"></span>
-                                        <span class="text-success">Обмен подтвержден</span>
-                                    </div>
-                                    <span class="float-end text-secondary" itemprop="datePublished"
-                                        content="2023-10-11T21:03:14+00:00">
-                                        11 October 2023 в 21:03 </span>
-                                </cite>
-                                <div class="box-review">
-                                    <p itemprop="reviewBody">Немного обосра..лись сегодня ребята по скорости. Ждал 30
-                                        мин.
-                                        Думаю исправятся. Аминь
-                                    <div class="foot-review float-end">
-                                        <a href="#review-answer-75746" class="link-action link-comment">Добавить
-                                            коментарий</a>
-                                        <a href="#review-parent-75746" class="link-action link-delete" data-id="75746"
-                                            data-query="review_action=delete&amp;review_id=75746">Удалить</a>
-                                    </div>
-                                    </p>
-                                    <div class="form-open " style="display: none;" id="form-answer-for-75746">
-                                        <div class="form-inner">
-                                            <form action="#form-answer-for-75746" method="post">
-                                                <input type="hidden" name="_wpnonce_reviews" value="288b14fd54">
-                                                <input type="hidden" name="review_action" value="answer">
-                                                <input type="hidden" name="review_answer" value="75746">
-                                                <input type="hidden" name="reviews[parent_id]" value="75746">
-                                                <input type="hidden" name="reviews[xobmen_id]" value="1068">
-                                                <div class="">
-                                                    <textarea cols="3" rows="3" name="reviews[comment]"
-                                                        placeholder="Комментировать внутри отзыва может только владелец отзыва. Напишите ваш комментарий."
-                                                        required=""></textarea>
-                                                </div>
-                                                <div class="foot-btn row">
-                                                    <div class="col ">
-                                                        <input type="password" name="review_password" value=""
-                                                            placeholder="Напишите пароль отзыва *" required=""
-                                                            pattern="[^<>]{6,32}">
+                                                src="https://img2.exchangesumo.com/wp-content/plugins/vw-reviews/assets/images/flags-iso/24/RU.png"
+                                                data-src="https://img2.exchangesumo.com/wp-content/plugins/vw-reviews/assets/images/flags-iso/24/RU.png">213.87.137.*</span>
+                                        <div
+                                            class="d-flex justify-content-start flex-nowrap align-items-center align-content-center">
+                                            <span class="wrap-badge data-badge data-badge__confirmed"></span>
+                                            <span class="text-success">Обмен подтвержден</span>
+                                        </div>
+                                        <span class="float-end text-secondary" itemprop="datePublished"
+                                            content="2023-10-11T21:03:14+00:00">
+                                            11 October 2023 в 21:03 </span>
+                                    </cite>
+                                    <div class="box-review">
+                                        <p itemprop="reviewBody">Немного обосра..лись сегодня ребята по скорости. Ждал
+                                            30
+                                            мин.
+                                            Думаю исправятся. Аминь
+                                        <div class="foot-review float-end">
+                                            <a href="https://exchangesumo.com/exchanger/1068/Cerber/#review-answer-75746"
+                                                class="link-action link-comment">Добавить
+                                                коментарий</a>
+                                            <a href="https://exchangesumo.com/exchanger/1068/Cerber/#review-parent-75746"
+                                                class="link-action link-delete" data-id="75746"
+                                                data-query="review_action=delete&amp;review_id=75746">Удалить</a>
+                                        </div>
+                                        </p>
+                                        <div class="form-open " style="display: none;" id="form-answer-for-75746">
+                                            <div class="form-inner">
+                                                <form action="#form-answer-for-75746" method="post">
+                                                    <input type="hidden" name="_wpnonce_reviews" value="288b14fd54">
+                                                    <input type="hidden" name="review_action" value="answer">
+                                                    <input type="hidden" name="review_answer" value="75746">
+                                                    <input type="hidden" name="reviews[parent_id]" value="75746">
+                                                    <input type="hidden" name="reviews[xobmen_id]" value="1068">
+                                                    <div class="">
+                                                        <textarea cols="3" rows="3" name="reviews[comment]"
+                                                            placeholder="Комментировать внутри отзыва может только владелец отзыва. Напишите ваш комментарий."
+                                                            required=""></textarea>
                                                     </div>
+                                                    <div class="foot-btn row">
+                                                        <div class="col-sm-6">
+                                                            <input type="password" name="review_password" value=""
+                                                                placeholder="Напишите пароль отзыва *" required=""
+                                                                pattern="[^<>]{6,32}">
+                                                        </div>
+                                                        <div class="col-sm-1"></div>
+                                                        <div class="col-sm-5">
+                                                            <button type="submit" class="btn btn-primary float-end">Добавить комментарий</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </form>
+                                            </div>
 
-                                                    <button type="submit" class="btn">Добавить комментарий</button>
-                                                </div>
-                                            </form>
                                         </div>
 
                                     </div>
-
-                                </div>
-                            </blockquote>
-
+                                </blockquote>
+                            </div>
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link"
+                                        href="https://exchangesumo.com/exchanger/1068/Cerber/">1</a></li>
+                                <li class="page-item"><a class="page-link"
+                                        href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=2">2</a></li>
+                                <li class="page-item"><a class="page-link"
+                                        href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=3">3</a></li>
+                                <li class="page-item"><a class="page-link"
+                                        href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=4">4</a></li>
+                                <li class="page-item"><a class="page-link"
+                                        href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=5">5</a></li>
+                                <li class="page-item"><a class="page-link"
+                                        href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=6">6</a></li>
+                                <li class="page-item"><a class="page-link"
+                                        href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=7">7</a></li>
+                                <li class="page-item"><a class="page-link"
+                                        href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=8">8</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                            </li>
-                            <li class="page-item"><a class="page-link"
-                                    href="https://exchangesumo.com/exchanger/1068/Cerber/">1</a></li>
-                            <li class="page-item"><a class="page-link"
-                                    href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=2">2</a></li>
-                            <li class="page-item"><a class="page-link"
-                                    href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=3">3</a></li>
-                            <li class="page-item"><a class="page-link"
-                                    href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=4">4</a></li>
-                            <li class="page-item"><a class="page-link"
-                                    href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=5">5</a></li>
-                            <li class="page-item"><a class="page-link"
-                                    href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=6">6</a></li>
-                            <li class="page-item"><a class="page-link"
-                                    href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=7">7</a></li>
-                            <li class="page-item"><a class="page-link"
-                                    href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=8">8</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-
                     </div>
 
                     <script src="./assets/block_exchangeTabs/script.js"></script>
@@ -7759,6 +7743,16 @@
     <script src="./assets/files/banners-brief.js.загрузка"></script>
     <script src="./assets/files/analitika-client.js.загрузка"></script>
     <script src="./assets/files/analitika-siga.js.загрузка"></script>
+    <script src="./assets/js/autoptimize_d8.js"></script>
+    <script data-plugin="vlt_list" data-noptimize="1"
+        src="https://img2.exchangesumo.com/wp-content/plugins/vw-widgetvalutelist/assets/tmp/vlt_list.json.js?v=1697149802"></script>
+    <script src="https://img2.exchangesumo.com/wp-content/plugins/vw-widgetvalutelist/assets/init.js?v=1.2.1"
+        defer="defer"></script>
+    <script
+        src="https://img2.exchangesumo.com/wp-content/plugins/vw-widgetvalutelist/assets/favorites.js?v=1.2.1"></script>
+    <script src="https://img2.exchangesumo.com/wp-content/plugins/vw-widgetvalutelist/assets/test7.js?v=1.2.1"></script>
+    <script async data-noptimize="1"
+        src='https://img2.exchangesumo.com/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js'></script>
     <script src="https://kit.fontawesome.com/c9d446a0a9.js" crossorigin="anonymous"></script>
     <script>(function ($) {
             $(function () {
@@ -7791,5 +7785,224 @@
     <script type="text/javascript"
         id="">window.smartlook || function (a) { var b = smartlook = function () { b.api.push(arguments) }, c = a.getElementsByTagName("head")[0]; a = a.createElement("script"); b.api = []; a.async = !0; a.type = "text/javascript"; a.charset = "utf-8"; a.src = "https://web-sdk.smartlook.com/recorder.js"; c.appendChild(a) }(document); smartlook("init", "2248be50dec5bf9a008157c75385064a0c562823", { region: "eu" }); smartlook("record", { forms: !0, numbers: !0 });</script>
 </body>
+
+<!-- begin exchangers monitor scripts -->
+<script type="text/javascript">
+    var mainURL = 'https://exchangesumo.com';
+    var mainPageID = '724';
+    var vltRef = mainURL + '/obmen/';
+
+    valutes = [];
+    valutes[91] = "QIWIRUR"; valutes[134] = "QIWI"; valutes[169] = "QWEUR"; valutes[208] = "QWKZT"; valutes[10] = "YAMRUB"; valutes[1] = "WMZ"; valutes[2] = "WMR"; valutes[3] = "WME"; valutes[6] = "WMU"; valutes[4] = "WMB"; valutes[7] = "WMY"; valutes[172] = "WMK"; valutes[5] = "WMG"; valutes[110] = "WMX"; valutes[252] = "PMRRUB"; valutes[215] = "PMRUSD"; valutes[263] = "PMRUAH"; valutes[198] = "QWVRUB"; valutes[48] = "PMUSD"; valutes[49] = "PMEUR"; valutes[145] = "PMBTC"; valutes[159] = "PMVUSD"; valutes[173] = "ADVCUSD"; valutes[174] = "ADVCRUB"; valutes[243] = "ADVCUAH"; valutes[175] = "ADVCEUR"; valutes[303] = "ADVCKZT"; valutes[390] = "ADVCTRY"; valutes[130] = "PRUSD"; valutes[167] = "PRRUB"; valutes[168] = "PREUR"; valutes[200] = "CPTSUSD"; valutes[202] = "CPTSRUB"; valutes[393] = "CPTSEUR"; valutes[33] = "PPUSD"; valutes[31] = "PPEUR"; valutes[111] = "PPRUB"; valutes[123] = "PPGBP"; valutes[124] = "PPCAD"; valutes[125] = "PPAUD"; valutes[25] = "Skrill"; valutes[160] = "SKLEUR"; valutes[170] = "WTUSD"; valutes[51] = "PAUSD"; valutes[166] = "PAEUR"; valutes[12] = "ESP"; valutes[97] = "EPUSD"; valutes[112] = "EPEUR"; valutes[104] = "OKUSD"; valutes[105] = "OKRUB"; valutes[106] = "OKEUR"; valutes[53] = "LQUSD"; valutes[54] = "LQRUB"; valutes[55] = "LQEUR"; valutes[52] = "LQUAH"; valutes[42] = "WOUSD"; valutes[41] = "WORUB"; valutes[43] = "WOUAH"; valutes[103] = "PXMUSD"; valutes[136] = "PXMEUR"; valutes[277] = "EKZT"; valutes[214] = "EPAYUSD"; valutes[240] = "EPAYEUR"; valutes[113] = "EPMUSD"; valutes[286] = "EPMEUR"; valutes[34] = "PXUSD"; valutes[98] = "CGUSD"; valutes[102] = "PWUSD"; valutes[117] = "UKUSD"; valutes[118] = "UKEUR"; valutes[101] = "STPUSD"; valutes[217] = "ALPCNY"; valutes[288] = "APPSTRRUB"; valutes[274] = "GMUAH"; valutes[278] = "EDram"; valutes[275] = "INFXUSD"; valutes[223] = "MPLRUB"; valutes[211] = "MPLUSD"; valutes[212] = "MPLEUR"; valutes[27] = "MMLUSD"; valutes[26] = "MMLRUB"; valutes[142] = "NixMoney"; valutes[157] = "NIXEUR"; valutes[247] = "NIXBTC"; valutes[171] = "HelixMoney"; valutes[176] = "NTLRUSD"; valutes[177] = "NTLREUR"; valutes[227] = "PSRUSD"; valutes[228] = "PSREUR"; valutes[11] = "RBK"; valutes[272] = "FPUSD"; valutes[282] = "FPIDR"; valutes[285] = "ECOPAYZRUB"; valutes[283] = "ECOPAYZUSD"; valutes[284] = "ECOPAYZEUR"; valutes[218] = "WCTCNY"; valutes[268] = "FKRUB"; valutes[56] = "ZPRUB"; valutes[289] = "KSTRUAH"; valutes[119] = "TNCUSD"; valutes[99] = "EGCUSD"; valutes[100] = "EGCEUR"; valutes[83] = "GDPUSD"; valutes[84] = "GDPEUR"; valutes[128] = "HDUSD"; valutes[135] = "RPUSD"; valutes[156] = "NLMUSD"; valutes[72] = "CashUSD"; valutes[74] = "CashRUB"; valutes[73] = "CashEUR"; valutes[115] = "CashUAH"; valutes[242] = "CASHKZT"; valutes[350] = "CashAED"; valutes[355] = "CASHTRY"; valutes[366] = "CASHPLN"; valutes[392] = "CASHGEL"; valutes[412] = "CASHTHB"; valutes[90] = "SBRFRUB"; valutes[206] = "SBERKZT"; valutes[180] = "SBERUSD"; valutes[250] = "SBERUAH"; valutes[78] = "ACRUB"; valutes[220] = "ACCRUB"; valutes[219] = "ACCUSD"; valutes[221] = "ACCEUR"; valutes[182] = "ACUAH"; valutes[184] = "ACUSD"; valutes[137] = "TKS"; valutes[312] = "TCSBQRUB"; valutes[311] = "TCSBCRUB"; valutes[81] = "P24UAH"; valutes[80] = "P24USD"; valutes[114] = "P24EUR"; valutes[141] = "P24RUB"; valutes[266] = "MONOBUAH"; valutes[151] = "OSHBUAH"; valutes[374] = "ABUAH"; valutes[372] = "IZIBUAH"; valutes[373] = "NEOBUAH"; valutes[77] = "TBRUB"; valutes[178] = "GPBRUB"; valutes[295] = "MIRCRUB"; valutes[244] = "BLRBBYN"; valutes[92] = "RFBRUB"; valutes[155] = "RFBUAH"; valutes[226] = "KSPBKZT"; valutes[334] = "JSNBKZT"; valutes[207] = "FRTBKZT"; valutes[95] = "RUSSTRUB"; valutes[94] = "AVBRUB"; valutes[287] = "POSTBRUB"; valutes[79] = "PSBRUB"; valutes[143] = "OPENBANK"; valutes[150] = "KUKRUB"; valutes[298] = "RKTBRUB"; valutes[121] = "KKBKZT"; valutes[144] = "HALYKBANK"; valutes[146] = "PUMBUAH"; valutes[271] = "OTPBRUB"; valutes[270] = "OTPBUAH"; valutes[158] = "UNVBUAH"; valutes[152] = "HCBRUB"; valutes[153] = "UNCBRUB"; valutes[154] = "UNCBUAH"; valutes[129] = "USBUAH"; valutes[413] = "GRGBGEL"; valutes[414] = "TBCBGEL"; valutes[401] = "VKFBTRY"; valutes[402] = "ZRTBTRY"; valutes[403] = "GRNTBTRY"; valutes[404] = "AKBTRY"; valutes[405] = "BRBKZT"; valutes[406] = "CCBKZT"; valutes[276] = "ATFBKZT"; valutes[280] = "EURBKZT"; valutes[93] = "TRBRUB"; valutes[183] = "RNKBRUB"; valutes[305] = "MTSBRUB"; valutes[273] = "AKBBRUB"; valutes[96] = "SVBRUB"; valutes[304] = "RSHBRUB"; valutes[351] = "SBPRUB"; valutes[120] = "DTBUAH"; valutes[209] = "ATNBKZT"; valutes[317] = "ROSBRUB"; valutes[302] = "UZCUZS"; valutes[375] = "HUMOUZS"; valutes[76] = "CardUAH"; valutes[71] = "CardRUB"; valutes[69] = "CardUSD"; valutes[70] = "CardEUR"; valutes[210] = "CARDKZT"; valutes[384] = "CARDGEL"; valutes[360] = "CARDPLN"; valutes[362] = "CARDTRY"; valutes[359] = "CARDAZN"; valutes[361] = "CARDCNY"; valutes[383] = "CARDGBP"; valutes[245] = "CARDBYN"; valutes[279] = "CARDAMD"; valutes[260] = "CARDTHB"; valutes[318] = "CARDMDL"; valutes[411] = "CARDINR"; valutes[369] = "CARDTJS"; valutes[379] = "CARDUZS"; valutes[122] = "UNPCNY"; valutes[235] = "STLMRUB"; valutes[116] = "WIREUAH"; valutes[66] = "WireUSD"; valutes[68] = "WireRUB"; valutes[67] = "WireEUR"; valutes[363] = "WIREBYN"; valutes[364] = "WIRETRY"; valutes[269] = "WIREKZT"; valutes[365] = "WIREAED"; valutes[126] = "WIREGBP"; valutes[216] = "WIRECNY"; valutes[246] = "WIRETHB"; valutes[229] = "WIREJPY"; valutes[314] = "WIREPLN"; valutes[368] = "WIREGEL"; valutes[367] = "WIRECAD"; valutes[370] = "WIREHKD"; valutes[371] = "WIREAUD"; valutes[394] = "WIREINR"; valutes[395] = "WIRENZD"; valutes[396] = "WIREVND"; valutes[397] = "WIREIDR"; valutes[398] = "WIRECHF"; valutes[399] = "WIRENGN"; valutes[400] = "WIREKRW"; valutes[87] = "WUUSD"; valutes[88] = "WURUB"; valutes[149] = "WUEUR"; valutes[89] = "MGUSD"; valutes[107] = "MGEUR"; valutes[267] = "SEPAUSD"; valutes[222] = "SEPAEUR"; valutes[382] = "REVBUSD"; valutes[380] = "REVBEUR"; valutes[352] = "WISEUSD"; valutes[353] = "WISEEUR"; valutes[127] = "CNTRUB"; valutes[131] = "CNTUSD"; valutes[165] = "CNTEUR"; valutes[148] = "GCMTUSD"; valutes[147] = "GCMTRUB"; valutes[253] = "SGMTUSD"; valutes[254] = "SGMTEUR"; valutes[255] = "RMTFUSD"; valutes[256] = "RMTFEUR"; valutes[132] = "USTMUSD"; valutes[133] = "USTMRUB"; valutes[140] = "BTC"; valutes[333] = "BTCBEP20"; valutes[335] = "WBTC"; valutes[189] = "ETH"; valutes[332] = "ETHBEP20"; valutes[194] = "ETC"; valutes[181] = "XRP"; valutes[301] = "USDTERC"; valutes[307] = "USDTTRC"; valutes[327] = "USDTBEP20"; valutes[349] = "USDTSOL"; valutes[376] = "USDTPOLYGON"; valutes[195] = "USDT"; valutes[381] = "EURTERC20"; valutes[292] = "USDC"; valutes[346] = "USDCTRC20"; valutes[354] = "USDCBEP20"; valutes[348] = "USDCSOL"; valutes[378] = "USDCPOLYGON"; valutes[291] = "TUSD"; valutes[377] = "TUSDTRC20"; valutes[293] = "USDP"; valutes[320] = "DAI"; valutes[344] = "UST"; valutes[325] = "BUSD"; valutes[186] = "BCH"; valutes[290] = "BSV"; valutes[109] = "LTC"; valutes[251] = "BNB"; valutes[339] = "BNBBEP20"; valutes[238] = "ADA"; valutes[239] = "TRX"; valutes[196] = "XMR"; valutes[236] = "XLM"; valutes[230] = "EOS"; valutes[191] = "DASH"; valutes[179] = "DGC"; valutes[264] = "LSK"; valutes[261] = "NMC"; valutes[234] = "QTUM"; valutes[213] = "XVG"; valutes[249] = "WAVES"; valutes[192] = "ZEC"; valutes[164] = "NXT"; valutes[248] = "DCR"; valutes[265] = "GNO"; valutes[231] = "IOTA"; valutes[237] = "XEM"; valutes[258] = "BTG"; valutes[232] = "NEO"; valutes[233] = "OMG"; valutes[262] = "REP"; valutes[139] = "PPC"; valutes[259] = "SC"; valutes[257] = "VET"; valutes[296] = "BCN"; valutes[138] = "BTCEUSD"; valutes[163] = "BTCEBTC"; valutes[162] = "BTCERUB"; valutes[161] = "ECNEXUSD"; valutes[225] = "CCXUSD"; valutes[185] = "EXMUSD"; valutes[190] = "EXMRUB"; valutes[201] = "EXMEUR"; valutes[204] = "EXMUAH"; valutes[205] = "EXMBTC"; valutes[281] = "LVCNRUB"; valutes[193] = "LVCNUSD"; valutes[187] = "WEXRUB"; valutes[188] = "WEXUSD"; valutes[199] = "WEXEUR"; valutes[203] = "WEXBTC"; valutes[197] = "MWRUB"; valutes[294] = "ZRX"; valutes[297] = "BAT"; valutes[299] = "CRXUSD"; valutes[300] = "KUNAUAH"; valutes[306] = "ATOM"; valutes[308] = "LINK"; valutes[309] = "XTZ"; valutes[310] = "BTT"; valutes[313] = "KMD"; valutes[315] = "ICX"; valutes[316] = "ONT"; valutes[319] = "DOT"; valutes[321] = "ALGO"; valutes[322] = "UNI"; valutes[323] = "THETA"; valutes[324] = "SUSHI"; valutes[326] = "SOL"; valutes[328] = "RVN"; valutes[329] = "SHIB"; valutes[330] = "MATIC"; valutes[331] = "KSM"; valutes[336] = "Mana"; valutes[337] = "AVAX"; valutes[338] = "YFI"; valutes[340] = "AAVE"; valutes[341] = "KAVA"; valutes[342] = "LUNA"; valutes[345] = "EVER"; valutes[343] = "NEAR"; valutes[356] = "CAKE"; valutes[357] = "SHIBBEP20"; valutes[358] = "TON"; valutes[385] = "APE"; valutes[386] = "APT"; valutes[387] = "ARB"; valutes[388] = "SAND"; valutes[389] = "OKB"; valutes[391] = "CRO"; valutes[408] = "1INCH"; valutes[409] = "WBT"; valutes[410] = "PNRUSD";			</script>
+
+
+<!-- Preload flags -->
+<link rel="preload"
+    href="https://img2.exchangesumo.com/wp-content/cache/autoptimize/css/autoptimize_single_9f8df79267fccd8dc396838fc4e893bd.css"
+    as="style" onload="this.rel='stylesheet'">
+<noscript>
+    <link rel="stylesheet" href="//img2.exchangesumo.com/wp-content/plugins/exchangers-monitor/base64_icon.css">
+</noscript>
+
+<!-- Preload tooltipster -->
+
+<noscript>
+    <link rel="stylesheet"
+        href="https://img2.exchangesumo.com/wp-content/themes/exchange_monitoring_v2/nres/css/tooltipster.bundle.min.css">
+</noscript>
+
+<!-- Preload tooltipster-sideTip -->
+
+<noscript>
+    <link rel="stylesheet"
+        href="https://img2.exchangesumo.com/wp-content/themes/exchange_monitoring_v2/nres/css/tooltipster-sideTip-light.min.css">
+</noscript>
+
+
+<style>
+    .lazyload,
+    .lazyloading {
+        opacity: 0;
+    }
+
+    .lazyloaded {
+        opacity: 1;
+        transition: opacity 300ms;
+    }
+</style><noscript>
+    <style>
+        .lazyload {
+            display: none;
+        }
+    </style>
+</noscript>
+<script data-noptimize="1">window.lazySizesConfig = window.lazySizesConfig || {}; window.lazySizesConfig.loadMode = 1;</script>
+<script async data-noptimize="1"
+    src='https://img2.exchangesumo.com/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+
+    /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+    /* This file is meant as a standalone workflow for
+    - testing support for link[rel=preload]
+    - enabling async CSS loading in browsers that do not support rel=preload
+    - applying rel preload css once loaded, whether supported or not.
+    */
+    (function (w) {
+        "use strict";
+        if (!w.loadCSS) {
+            w.loadCSS = function () { };
+        }
+        var rp = loadCSS.relpreload = {};
+        rp.support = (function () {
+            var ret;
+            try {
+                ret = w.document.createElement("link").relList.supports("preload");
+            } catch (e) {
+                ret = false;
+            }
+            return function () {
+                return ret;
+            };
+        })();
+
+        rp.bindMediaToggle = function (link) {
+            var finalMedia = link.media || "all";
+
+            function enableStylesheet() {
+                link.media = finalMedia;
+            }
+
+            if (link.addEventListener) {
+                link.addEventListener("load", enableStylesheet);
+            } else if (link.attachEvent) {
+                link.attachEvent("onload", enableStylesheet);
+            }
+
+            setTimeout(function () {
+                link.rel = "stylesheet";
+                link.media = "only x";
+            });
+            setTimeout(enableStylesheet, 3000);
+        };
+
+        rp.poly = function () {
+            if (rp.support()) {
+                return;
+            }
+            var links = w.document.getElementsByTagName("link");
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                if (link.rel === "preload" && link.getAttribute("as") === "style" && !link.getAttribute("data-loadcss")) {
+                    link.setAttribute("data-loadcss", true);
+                    rp.bindMediaToggle(link);
+                }
+            }
+        };
+
+        if (!rp.support()) {
+            rp.poly();
+
+            var run = w.setInterval(rp.poly, 500);
+            if (w.addEventListener) {
+                w.addEventListener("load", function () {
+                    rp.poly();
+                    w.clearInterval(run);
+                });
+            } else if (w.attachEvent) {
+                w.attachEvent("onload", function () {
+                    rp.poly();
+                    w.clearInterval(run);
+                });
+            }
+        }
+    }(this.global || this));
+
+</script>
+
+
+
+<div class="login overlay_popup"></div>
+<div class="login popup-blocks" id="popup-login-wrap">
+    <div class="popup-window" id="popup-login">
+        <div class="popup-content">
+        </div>
+        <a href="#" class="close"></a>
+    </div>
+</div>
+<div class="vwpb overlay-popup"></div>
+<div class="vwpb popup-wrap" id="vwpb_popup_wrap">
+    <div class="popup-window" id="vwpb_popup_window">
+        <div class="popup-content"> </div>
+        <a href="#" class="close"></a>
+    </div>
+</div>
+<script data-plugin="vlt_list" data-noptimize="1"
+    src="https://img2.exchangesumo.com/wp-content/plugins/vw-widgetvalutelist/assets/tmp/vlt_list.json.js?v=1697149802"></script>
+<script src="https://img2.exchangesumo.com/wp-content/plugins/vw-widgetvalutelist/assets/init.js?v=1.2.1"
+    defer="defer"></script>
+<script src="https://img2.exchangesumo.com/wp-content/plugins/vw-widgetvalutelist/assets/favorites.js?v=1.2.1"></script>
+<script src="https://img2.exchangesumo.com/wp-content/plugins/vw-widgetvalutelist/assets/test7.js?v=1.2.1"></script>
+
+
+<!-- Analitika footer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"
+    defer> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, k.onerror = function (e) { sendSiGa('event', 'Error', 'Loading', 'YM'); }, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(50526853, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true }); </script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/50526853" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript> <!-- /Yandex.Metrika counter -->
+<script type="text/javascript" defer
+    src="https://img2.exchangesumo.com/wp-content/cache/autoptimize/js/autoptimize_d8e484bac9c3c1010d61281b9be95635.js"></script>
+</body>
+
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 0/0 objects using memcache
+
+Served from: exchangesumo.com @ 2023-10-13 16:57:54 by W3 Total Cache
+-->
 
 </html>

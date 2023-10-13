@@ -1,6 +1,9 @@
 $color_1: #000;
 $color_2: #262b3e;
 $color_3: #537dd6;
+$color_4: #262b3e;
+$background-color_1: rgba(255,150,46,.2);
+$border-color_1: rgba(255,150,46,.2);
 
 .data-about {
 	margin: 0;
@@ -21,12 +24,20 @@ $color_3: #537dd6;
 .wrap-data {
 	padding: 0 0 13px;
 }
-.ui-button-orange {
+
+.btn-warning {
 	display: inline;
 	font-size: 13px;
 	line-height: 20px;
-	color: $color_2;
 	padding: 5px 8px;
 	border-radius: 4px;
 	white-space: nowrap;
+	background-color: $background-color_1;
+	color: $color_4;
+	border-color: $border-color_1;
+	&:hover {
+		background-color: $background-color_1;
+		color: $color_1;
+		border-color: $border-color_1;
+	}
 }
