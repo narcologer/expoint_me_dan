@@ -36,18 +36,6 @@ textarea {
   transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
-.formRow {
-  margin: 0 -8px;
-  overflow: hidden;
-}
-.formRow .formCol {
-  padding: 0 8px;
-  float: left;
-  padding: 0 15px;
-  box-sizing: border-box;
-  width: 50%;
-}
-
 input[type=text] {
   width: 100%;
   padding: 12px 19px;
@@ -154,13 +142,10 @@ input[type=password] {
   cursor: pointer;
 }
 
-.select-box_item-box_item:nth-child(2n) {
-  background: #eaf3fa;
-}
-
-#create-reviews .select-box_item-box_item {
-  padding: 5px 19px;
-  transition: 0.2s;
-  font: 300 17px/22px "Roboto", sans-serif;
-  cursor: pointer;
+.form-select {
+  height: 50px;
+  border: 2px solid #c5cdda;
+  border-radius: 4px;
+  background: #fff;
+  margin: 0 0 20px;
 }/*# sourceMappingURL=block_revForm.css.map */

@@ -7380,82 +7380,78 @@
                                     <input type="hidden" name="_wpnonce_reviews" value="57070b3be5">
                                     <input type="hidden" name="review_action" value="create">
                                     <input type="hidden" name="reviews[xobmen_id]" value="1068">
-                                    <div class="formRow">
-                                        <div class="formCol">
+                                    <div class="row">
+                                        <div class="col-sm-6">
                                             <span class="form-title">Добавить отзыв</span>
                                         </div>
-                                        <div class="formCol">
-                                            <div class="rating_box">
+                                        <div class="col-sm-6">
+                                            <div class="rating_box d-flex">
                                                 <input class="need-hidden" type="hidden" name="reviews[rating]"
                                                     value="0">
                                                 <div class="rating-title">Рейтинг:</div>
                                                 <div class="rating-stars not-check">
-                                                    <span class="star" data-val="0"></span>
-                                                    <span class="star" data-val="1"></span>
-                                                    <span class="star" data-val="2"></span>
-                                                    <span class="star" data-val="3"></span>
-                                                    <span class="star" data-val="4"></span>
-                                                    <span class="star" data-val="5"></span>
+                                                    <i class="fa-solid fa-star star" data-val="0"></i>
+                                                    <i class="fa-solid fa-star star" data-val="1"></i>
+                                                    <i class="fa-solid fa-star star" data-val="2"></i>
+                                                    <i class="fa-solid fa-star star" data-val="3"></i>
+                                                    <i class="fa-solid fa-star star" data-val="4"></i>
+                                                    <i class="fa-solid fa-star star" data-val="5"></i>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="formRow">
-                                        <div class="formCol ">
+                                    <div class="row">
+                                        <div class="col-sm-6">
                                             <input type="text" name="reviews[user_name]" value="" placeholder="Ваше имя"
                                                 required="">
                                         </div>
-                                        <div class="formCol ">
+                                        <div class="col-sm-6">
                                             <input type="email" name="reviews[user_email]" value=""
                                                 placeholder="Электронная почта *" required="">
                                         </div>
                                     </div>
-                                    <div class="formRow no-hidden">
-                                        <div class="formCol">
+                                    <div class="row no-hidden">
+                                        <div class="col-sm-6">
                                             <div class="select-box" id="speed">
                                                 <input class="need-hidden" type="hidden" name="reviews[speed]"
                                                     value="0">
-                                                <div class="select-box_label">Оцените скорость обмена</div>
-                                                <div class="select-box_item-box" style="display:none;">
-                                                    <div class="select-box_item-box_item" data-val="0">нет оценки</div>
-                                                    <div class="select-box_item-box_item" data-val="1">мгновенно</div>
-                                                    <div class="select-box_item-box_item" data-val="5">до 5 минут</div>
-                                                    <div class="select-box_item-box_item" data-val="10">до 10 минут
-                                                    </div>
-                                                    <div class="select-box_item-box_item" data-val="30">до 30 минут
-                                                    </div>
-                                                    <div class="select-box_item-box_item" data-val="50">до 50 минут
-                                                    </div>
-                                                </div>
+
+                                                <select class="form-select select-box_item-box" aria-label="Default select example">
+                                                    <option selected>Оцените скорость обмена</option>
+                                                    <option value="1" data-val="0">нет оценки</option>
+                                                    <option value="2" data-val="1">мгновенно</option>
+                                                    <option value="3" data-val="5">до 5 минут</option>
+                                                    <option value="4" data-val="10">до 10 минут</option>
+                                                    <option value="5" data-val="30">до 30 минут</option>
+                                                    <option value="6" data-val="50">до 50 минут</option>
+                                                </select>
+
                                             </div>
                                         </div>
-                                        <div class="formCol">
-                                            <div class="select-box" id="ball">
-                                                <input class="need-hidden" type="hidden" name="reviews[ball]" value="0">
-                                                <div class="select-box_label">Оцените работу поддержки</div>
-                                                <div class="select-box_item-box"  style="display:none;">
-                                                    <div class="select-box_item-box_item" data-val="0">нет оценки</div>
-                                                    <div class="select-box_item-box_item" data-val="1">очень плохо</div>
-                                                    <div class="select-box_item-box_item" data-val="2">плохо</div>
-                                                    <div class="select-box_item-box_item" data-val="3">хорошо</div>
-                                                    <div class="select-box_item-box_item" data-val="4">очень хорошо
-                                                    </div>
-                                                    <div class="select-box_item-box_item" data-val="5">отлично</div>
-                                                </div>
-                                            </div>
+                                        <div class="col-sm-6">
+
+                                            <select class="form-select select-box_item-box" aria-label="Default select example">
+                                                <option selected>Оцените работу поддержки</option>
+                                                <option value="1" data-val="0">нет оценки</option>
+                                                <option value="2" data-val="1">очень плохо</option>
+                                                <option value="3" data-val="2">плохо</option>
+                                                <option value="4" data-val="3">хорошо</option>
+                                                <option value="5" data-val="4">очень хорошо</option>
+                                                <option value="6" data-val="5">отлично</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="">
                                         <textarea required="" formCols="3" formRows="3" name="reviews[comment]"
                                             placeholder="Напишите ваш отзыв об обменнике *"></textarea>
-                                    </div>
                                     <div class=" hidden ">
                                         <input type="text" class="reviews_number_order" name="reviews[number_order]"
                                             value="" placeholder="Номер заявки для претензии">
                                     </div>
 
-                                    <div class="d-flex justify-content-around">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            
                                         <div class="aside-hold d-flex">
                                             <div class="hold-check">
                                                 <input id="radio-good" type="radio" name="reviews[status]" value="1"
@@ -7474,7 +7470,11 @@
                                                     for="radio-bad">Претензия</label>
                                             </div>
                                         </div>
+                                        </div>
+                                        <div class="col-sm-4 text-center">
+                                            
                                         <button type="submit" class="btn btn-primary">Добавить отзыв</button>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
