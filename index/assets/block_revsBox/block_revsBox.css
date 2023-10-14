@@ -118,10 +118,13 @@
   padding: 5px 8px;
   border-radius: 4px;
   background: rgba(73, 92, 161, 0.1);
-  border-color: rgba(73, 92, 161, 0.1);
 }
 .btn-info:hover {
   background-color: rgba(73, 92, 161, 0.1);
   color: #a2a3a3;
   border-color: rgba(73, 92, 161, 0.1);
+}
+
+a.link-delete:hover {
+  color: #597756;
 }/*# sourceMappingURL=block_revsBox.css.map */
