@@ -1,0 +1,166 @@
+input {
+  vertical-align: middle;
+  line-height: 20px;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+select {
+  vertical-align: middle;
+  line-height: 20px;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+textarea {
+  vertical-align: middle;
+  line-height: 20px;
+  font-weight: 300;
+  font-size: 17px;
+  width: 100%;
+  padding: 12px 19px;
+  height: 200px;
+  color: #000;
+  margin: 0 0 20px;
+  border: 2px solid #c5cdda;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+  outline: 0;
+  line-height: 22px;
+  font-family: "Roboto", Tahoma, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 19px;
+  height: 50px;
+  color: #000;
+  margin: 0 0 20px;
+  border: 2px solid #c5cdda;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+  outline: 0;
+  line-height: 22px;
+  font-family: "Roboto", Tahoma, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 19px;
+  height: 50px;
+  color: #000;
+  margin: 0 0 20px;
+  border: 2px solid #c5cdda;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+  outline: 0;
+  line-height: 22px;
+  font-family: "Roboto", Tahoma, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+input[type=password] {
+  width: 100%;
+  padding: 12px 19px;
+  height: 50px;
+  color: #000;
+  margin: 0 0 20px;
+  border: 2px solid #c5cdda;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+  outline: 0;
+  line-height: 22px;
+  font-family: "Roboto", Tahoma, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.form-review .foot-btn .aside-hold {
+  float: left;
+}
+
+@media (max-width: 767px) {
+  input[type=text] {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  input[type=email] {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  input[type=password] {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  textarea {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+@media (max-width: 950px) {
+  textarea {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+.select-box_label {
+  width: 100%;
+  padding: 12px 19px;
+  height: 50px;
+  color: #666;
+  border: 2px solid #c5cdda;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+  outline: 0;
+  font: 300 17px/22px "Roboto", sans-serif;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+
+.form-select {
+  height: 50px;
+  border: 2px solid #c5cdda;
+  border-radius: 4px;
+  margin: 0 0 20px;
+}
+
+cite {
+  font-style: normal;
+}
+
+.btn-addrev {
+  background-color: #2197d5;
+  color: white;
+  border-color: #2197d5;
+}
+
+.btn-addrev:hover {
+  background-color: #65c3f4;
+  color: white;
+  border-color: #65c3f4;
+}/*# sourceMappingURL=block_revForm.css.map */

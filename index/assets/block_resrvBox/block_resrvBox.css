@@ -1,0 +1,21 @@
+select {
+  line-height: 24px;
+  font-weight: 300;
+  color: #666;
+  font-family: "Roboto", Tahoma, Helvetica, sans-serif;
+}
+select option:nth-child(even) {
+  background: rgba(230, 238, 242, 0.4);
+}
+
+#radio-good:checked {
+  background-color: green;
+}
+
+#radio-comment:checked {
+  background-color: black;
+}
+
+#radio-bad:checked {
+  background-color: red;
+}/*# sourceMappingURL=block_resrvBox.css.map */

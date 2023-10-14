@@ -1,0 +1,27 @@
+.btn.btn-blue {
+  font-size: 14px;
+  line-height: 35px;
+  padding: 0 15px;
+  background: #2197d5;
+}
+
+.about-img {
+  border: 2px solid #d3dee7;
+  box-shadow: 0px 5px 10px rgba(34, 93, 132, 0.16);
+  max-width: 100%;
+  height: auto;
+}
+
+.data-badge {
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 20px;
+}
+
+.data-badge-param_verified {
+  background-image: url("./images/sberbank.svg");
+}
+
+.data-badge_have_cashback {
+  background-image: url("./images/icn_have_cashback1.svg");
+}/*# sourceMappingURL=block_extitle-mob.css.map */

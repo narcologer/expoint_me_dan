@@ -1,0 +1,40 @@
+.btn.btn-blue {
+  font-size: 14px;
+  line-height: 35px;
+  padding: 0 15px;
+  background: #2197d5;
+}
+
+.about-img {
+  margin: 0 0 20px;
+  border: 2px solid #d3dee7;
+  box-shadow: 0px 5px 10px rgba(34, 93, 132, 0.16);
+  max-width: 100%;
+}
+
+.data-badge {
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 20px;
+}
+
+.wrap-data {
+  padding: 0 0 13px;
+}
+
+.btn-warning {
+  display: inline;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  background-color: rgba(255, 150, 46, 0.2);
+  color: #262b3e;
+  border-color: rgba(255, 150, 46, 0.2);
+}
+.btn-warning:hover {
+  background-color: rgba(255, 150, 46, 0.2);
+  color: #000;
+  border-color: rgba(255, 150, 46, 0.2);
+}/*# sourceMappingURL=block_exinfo-mob.css.map */

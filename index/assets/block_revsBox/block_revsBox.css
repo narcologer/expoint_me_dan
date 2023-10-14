@@ -1,0 +1,130 @@
+.data-badge__confirmed {
+  background-image: url("./images/icn_confirmed.svg");
+}
+
+.data-autor .review-date {
+  float: right;
+  font-weight: 500;
+  padding: 0 0 0 22px;
+  color: #a2a3a3;
+  margin: 0 2px 8px 20px;
+  position: relative;
+  text-align: right;
+  font-weight: 500;
+  margin: 0 2px 8px 20px;
+  text-align: right;
+}
+
+.box-review {
+  background-color: #e9fae7;
+  border-color: #589950;
+  color: #4a6b46;
+  padding: 13px 19px 10px;
+  margin: 0 0 18px;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #dfe3e9;
+}
+.box-review .foot-review {
+  overflow: hidden;
+  margin: -20px 0 0;
+}
+
+.link-action {
+  color: #597756;
+  border-color: #a0c99b;
+  margin: 0 0 5px 14px;
+  font-weight: 500;
+  border-bottom: 1px dashed #939aa4;
+  font-size: 13px;
+  line-height: 16px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.form-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 0 22px;
+  color: #2e3039;
+  display: block;
+}
+
+.label-radio.label-green {
+  color: #4a6b46;
+}
+
+.label-radio.label-green:before {
+  border-color: #4b6c47;
+}
+
+.label-radio.label-green:after {
+  background: #589950;
+}
+
+.label-radio.label-dark {
+  color: #354052;
+}
+
+.label-radio.label-dark:before {
+  border-color: #e0e4ea;
+}
+
+.label-radio.label-dark:after {
+  background: #414f65;
+}
+
+.label-radio.label-brown {
+  color: #94583f;
+}
+
+.label-radio.label-brown:before {
+  border-color: #955941;
+}
+
+.label-radio.label-brown:after {
+  background: #995050;
+}
+
+.pagination {
+  padding: 0;
+  margin: 0 0 20px;
+  list-style: none;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.pagination li {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 32px;
+  margin: 0 0 10px;
+  text-align: center;
+}
+.pagination .active {
+  color: white;
+  background-color: blue;
+}
+
+.btn-info {
+  display: inline;
+  font-size: 13px;
+  line-height: 20px;
+  color: #262b3e;
+  align-items: center;
+  padding: 5px 8px;
+  border-radius: 4px;
+  background: rgba(73, 92, 161, 0.1);
+}
+.btn-info:hover {
+  background-color: rgba(73, 92, 161, 0.1);
+  color: #a2a3a3;
+  border-color: rgba(73, 92, 161, 0.1);
+}
+
+a.link-delete:hover {
+  color: #597756;
+}/*# sourceMappingURL=block_revsBox.css.map */
