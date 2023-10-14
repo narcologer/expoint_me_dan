@@ -6919,8 +6919,8 @@
 
                         <div class="d-flex mb-2">
                             <span class="badge bg-success">https</span>
-                            <div class="data-badge data-badge-param_verified mx-2"></div>
-                            <div class="data-badge data-badge_have_cashback"></div>
+                            <div class="data-badge data-badge-param_verified mx-2" title="Обменный пункт прошел верификацию"></div>
+                            <div class="data-badge data-badge_have_cashback" title="Обменник поддерживает Повышенный кешбэк Вернем вам 35% с нашей прибыли по данному обмену. Подробнее в профиле на странице кешбека."></div>
                         </div>
 
                         <div class="row">
@@ -7374,9 +7374,17 @@
                         </div><!-- /.resrv_box -->
                         <div class="wrap-review review_box" id="exchanger-reviews" style="display: block;">
                             <h2>Отзывы обменника Cerber</h2>
+
+                            <div class="mb-4">
+                                <div id="filter_reviews_btn" class="btn btn-info" style="display: inline;"><i class="fa fa-filter mx-2" aria-hidden="true"></i>Фильтр
+                                    отзывов</div>
+
+                                <div id="add_review_btn" class="btn btn-warning">Добавить отзыв </div>
+                            </div>
+
                             <div class="form-review" id="create-reviews" style="display: contents; width: auto;">
-                                <form class="add_review_form" action="https://exchangesumo.com/exchanger/1068/Cerber/" method="post"
-                                    id="add_review_form"  style="display: block;">
+                                <form class="add_review_form" action="https://exchangesumo.com/exchanger/1068/Cerber/"
+                                    method="post" id="add_review_form" style="display: block;">
                                     <input type="hidden" name="_wpnonce_reviews" value="57070b3be5">
                                     <input type="hidden" name="review_action" value="create">
                                     <input type="hidden" name="reviews[xobmen_id]" value="1068">
@@ -7390,12 +7398,12 @@
                                                     value="0">
                                                 <div class="rating-title">Рейтинг:</div>
                                                 <div class="rating-stars not-check mx-2">
-                                                    <i class="fa-solid fa-star star" data-val="0"></i>
-                                                    <i class="fa-solid fa-star star" data-val="1"></i>
-                                                    <i class="fa-solid fa-star star" data-val="2"></i>
-                                                    <i class="fa-solid fa-star star" data-val="3"></i>
-                                                    <i class="fa-solid fa-star star" data-val="4"></i>
-                                                    <i class="fa-solid fa-star star" data-val="5"></i>
+                                                    <i class="fa-solid fa-star star text-secondary" data-val="0"></i>
+                                                    <i class="fa-solid fa-star star text-secondary" data-val="1"></i>
+                                                    <i class="fa-solid fa-star star text-secondary" data-val="2"></i>
+                                                    <i class="fa-solid fa-star star text-secondary" data-val="3"></i>
+                                                    <i class="fa-solid fa-star star text-secondary" data-val="4"></i>
+                                                    <i class="fa-solid fa-star star text-secondary" data-val="5"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -7417,7 +7425,8 @@
                                                 <input class="need-hidden" type="hidden" name="reviews[speed]"
                                                     value="0">
 
-                                                <select class="form-select select-box_item-box" aria-label="Default select example">
+                                                <select class="form-select select-box_item-box text-secondary"
+                                                    aria-label="Default select example">
                                                     <option selected>Оцените скорость обмена</option>
                                                     <option value="1" data-val="0">нет оценки</option>
                                                     <option value="2" data-val="1">мгновенно</option>
@@ -7431,7 +7440,8 @@
                                         </div>
                                         <div class="col-sm-6">
 
-                                            <select class="form-select select-box_item-box" aria-label="Default select example">
+                                            <select class="form-select select-box_item-box text-secondary"
+                                                aria-label="Default select example">
                                                 <option selected>Оцените работу поддержки</option>
                                                 <option value="1" data-val="0">нет оценки</option>
                                                 <option value="2" data-val="1">очень плохо</option>
@@ -7442,38 +7452,73 @@
                                             </select>
                                         </div>
                                     </div>
-                                        <textarea required="" formCols="3" formRows="3" name="reviews[comment]"
-                                            placeholder="Напишите ваш отзыв об обменнике *"></textarea>
-                                    <div class=" hidden ">
+                                    <textarea required="" formCols="3" formRows="3" name="reviews[comment]"
+                                        placeholder="Напишите ваш отзыв об обменнике *"></textarea>
+                                    <div class=" hidden " style="display: none;">
                                         <input type="text" class="reviews_number_order" name="reviews[number_order]"
                                             value="" placeholder="Номер заявки для претензии">
                                     </div>
 
                                     <div class="row">
                                         <div class="col-sm-8">
-                                            
-                                        <div class="aside-hold d-flex">
-                                            <div class="hold-check">
-                                                <input id="radio-good" type="radio" name="reviews[status]" value="1"
-                                                    checked="true">
-                                                <label class="label-radio label-green"
-                                                    for="radio-good">Положительный</label>
+
+                                            <div class="aside-hold d-flex">
+                                                <div class="hold-check">
+                                                    <input id="radio-good" class="form-check-input" type="radio"
+                                                        name="reviews[status]" value="1" checked="true">
+                                                    <label class="form-check-label label-radio text-success"
+                                                        for="radio-good">Положительный</label>
+                                                </div>
+                                                <div class="hold-check mx-4">
+                                                    <input id="radio-comment" class="form-check-input" type="radio"
+                                                        name="reviews[status]" value="0">
+                                                    <label class="form-check-label label-radio text-dark"
+                                                        for="radio-comment">Комментарий</label>
+                                                </div>
+                                                <div class="hold-check">
+                                                    <input id="radio-bad" class="form-check-input text-danger"
+                                                        type="radio" name="reviews[status]" value="-1">
+                                                    <label class="form-check-label label-radio text-danger"
+                                                        for="radio-bad">Претензия</label>
+                                                </div>
                                             </div>
-                                            <div class="hold-check mx-4">
-                                                <input id="radio-comment" type="radio" name="reviews[status]" value="0">
-                                                <label class="label-radio label-dark"
-                                                    for="radio-comment">Комментарий</label>
-                                            </div>
-                                            <div class="hold-check">
-                                                <input id="radio-bad" type="radio" name="reviews[status]" value="-1">
-                                                <label class="label-radio label-bformRown"
-                                                    for="radio-bad">Претензия</label>
-                                            </div>
-                                        </div>
+
+
                                         </div>
                                         <div class="col-sm-4 text-center">
-                                            
-                                        <button type="submit" class="btn btn-primary">Добавить отзыв</button>
+
+                                            <button type="submit" class="btn btn-addrev">Добавить отзыв</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div id="filter_reviews" style="display: none;">
+                                <form id="reviewsFilter" action="" method="post" name="filter_reviews">
+                                    <div class="d-flex justify-content-around">
+                                        <div class="filter-check hold-check">
+                                            <input class="form-check-input" id="radio-clean" type="radio"
+                                                name="selectReviews" checked="" value="2">
+                                            <label class="cleanReviews pointer label-radio label-dark"
+                                                for="radio-clean">Все</label>
+                                        </div>
+                                        <div class="filter-check hold-check">
+                                            <input class="form-check-input" id="radio-positive" type="radio"
+                                                name="selectReviews" value="1">
+                                            <label class="positiveReviews pointer label-radio label-green"
+                                                for="radio-positive">Положительные</label>
+                                        </div>
+                                        <div class="filter-check hold-check">
+                                            <input class="form-check-input" id="radio-neutral" type="radio"
+                                                name="selectReviews" value="0">
+                                            <label class="neutralReviews pointer label-radio label-dark"
+                                                for="radio-neutral">Нейтральные</label>
+                                        </div>
+                                        <div class="filter-check hold-check">
+                                            <input class="form-check-input" id="radio-negative" type="radio"
+                                                name="selectReviews" value="-1">
+                                            <label class="negativeReviews pointer label-radio label-brown"
+                                                for="radio-negative">Отрицательные</label>
                                         </div>
                                     </div>
                                 </form>
@@ -7486,11 +7531,12 @@
                                     <span itemprop="itemReviewed" itemscope="" itemtype="http://schema.org/Organization"
                                         itemref="exchanger-card"></span>
                                     <link itemprop="url" href="#review-parent-75746">
-                                    <cite class="d-flex justify-content-around">
-                                        <span class="icon-user"></span>
+                                    <cite class="d-flex justify-content-around" style="    font-size: 13px;
+                                    line-height: 18px;">
                                         <strong class="name-user" itemprop="author" itemscope=""
                                             itemtype="http://schema.org/Person">
-                                            <span class="text-dark" itemprop="name"> Феликс</span>
+                                            <span class="text-dark" itemprop="name" style="font-size: 15px;
+                                            line-height: 18px;"><i class="fa fa-user-circle-o mx-2" aria-hidden="true"></i>Феликс</span>
                                         </strong>
                                         <span class="user-ip"><noscript><img alt="Россия" class="country-flag"
                                                     style="width:20px;vertical-align:-4px;position:relative;height:16px;object-fit:scale-down"
@@ -7505,10 +7551,10 @@
                                             <span class="text-success">Обмен подтвержден</span>
                                         </div>
                                         <span class="float-end text-secondary" itemprop="datePublished"
-                                            content="2023-10-11T21:03:14+00:00">
+                                            content="2023-10-11T21:03:14+00:00"><i class="fa fa-clock-o" aria-hidden="true"></i>
                                             11 October 2023 в 21:03 </span>
                                     </cite>
-                                    <div class="box-review">
+                                    <div class="box-review mt-2">
                                         <p itemprop="reviewBody">Немного обосра..лись сегодня ребята по скорости. Ждал
                                             30
                                             мин.
@@ -7543,9 +7589,11 @@
                                                         </div>
                                                         <div class="col-sm-1"></div>
                                                         <div class="col-sm-5">
-                                                            <button type="submit" class="btn btn-primary float-end">Добавить комментарий</button>
+                                                            <button type="submit"
+                                                                class="btn btn-primary float-end">Добавить
+                                                                комментарий</button>
                                                         </div>
-                                                        
+
                                                     </div>
                                                 </form>
                                             </div>
@@ -7556,10 +7604,7 @@
                                 </blockquote>
                             </div>
                             <ul class="pagination justify-content-center">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                </li>
-                                <li class="page-item"><a class="page-link"
+                                <li class="page-item active"><a class="page-link"
                                         href="https://exchangesumo.com/exchanger/1068/Cerber/">1</a></li>
                                 <li class="page-item"><a class="page-link"
                                         href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=2">2</a></li>
@@ -7575,7 +7620,7 @@
                                         href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=7">7</a></li>
                                 <li class="page-item"><a class="page-link"
                                         href="https://exchangesumo.com/exchanger/1068/Cerber/?revpage=8">8</a></li>
-                                <li class="page-item">
+                                <li class="page-item active">
                                     <a class="page-link" href="#">Next</a>
                                 </li>
                             </ul>
@@ -7836,7 +7881,8 @@
         }
     </style>
 </noscript>
-<script data-noptimize="1">window.lazySizesConfig = window.lazySizesConfig || {}; window.lazySizesConfig.loadMode = 1;</script>
+<script
+    data-noptimize="1">window.lazySizesConfig = window.lazySizesConfig || {}; window.lazySizesConfig.loadMode = 1;</script>
 <script async data-noptimize="1"
     src='https://img2.exchangesumo.com/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js'></script>
 

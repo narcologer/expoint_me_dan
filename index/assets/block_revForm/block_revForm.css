@@ -151,4 +151,16 @@ input[type=password] {
 
 cite {
   font-style: normal;
+}
+
+.btn-addrev {
+  background-color: #2197d5;
+  color: white;
+  border-color: #2197d5;
+}
+
+.btn-addrev:hover {
+  background-color: #65c3f4;
+  color: white;
+  border-color: #65c3f4;
 }/*# sourceMappingURL=block_revForm.css.map */

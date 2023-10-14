@@ -1,14 +1,24 @@
-table {
-	tr {
+$font-family_1: 'Roboto',Tahoma,Helvetica,sans-serif;
+
+select {
+	line-height: 24px;
+	font-weight: 300;color: #666;
+	font-family: $font-family_1;
+	option {
 		&:nth-child(even) {
 			background: rgba(230,238,242,.4);
 		}
 	}
 }
-table#exchangesDoubleTable {
-	tr {
-		&:nth-child(4n+3) {
-			background: rgba(230,238,242,.4);
-		}
-	}
+
+#radio-good:checked{
+	background-color: green;
+}
+
+#radio-comment:checked{
+	background-color: black;
+}
+
+#radio-bad:checked{
+	background-color: red;
 }
